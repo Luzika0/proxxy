@@ -11,15 +11,15 @@ Klik domain yang kalian gunakan)
 const zoneID = "1afb132e61138ec866116b2e6a9a6e84"; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik
 domain yang kalian gunakan)
 let isApiReady = false;
-let proxyIP = "https://raw.githubusercontent.com/mrsyd-my/proxycf/refs/heads/main/ProxyList.txt";
+let proxyIP = "https://raw.githubusercontent.com/Luzika0/proxxy/refs/heads/main/Index.txt";
 let cachedProxyList = [];
 
 // Constant
 const APP_DOMAIN = `${serviceName}.${rootDomain}`;
 const PORTS = [443, 80];
 const PROTOCOLS = [reverse("najort"), reverse("sselv"), reverse("ss")];
-const KV_PROXY_URL = "https://raw.githubusercontent.com/mrsyd-my/proxycf/refs/heads/main/kvProxyList.json";
-const PROXY_BANK_URL = "https://raw.githubusercontent.com/mrsyd-my/proxycf/refs/heads/main/ProxyList.txt";
+const KV_PROXY_URL = "https://raw.githubusercontent.com/Luzika0/proxxy/refs/heads/main/panha.json";
+const PROXY_BANK_URL = "https://raw.githubusercontent.com/Luzika0/proxxy/refs/heads/main/Index.txt";
 const DNS_SERVER_ADDRESS = "8.8.8.8";
 const DNS_SERVER_PORT = 53;
 const PROXY_HEALTH_CHECK_API = "https://id1.foolvpn.me/api/v1/check";
@@ -1408,5 +1408,3 @@ async function getProxyList(proxyBankUrl = PROXY_BANK_URL) {
                             return this.html.replaceAll(/PLACEHOLDER_\w+/gim, "");
                             }
                             }
-
-
